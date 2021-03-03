@@ -14,11 +14,86 @@ body *{
 }
 
 /* contenitore principale */
-body > div{
+.container{
     width: 70%;
-    height: 800px;
+    /* height: 1500px; */
     margin: auto;
     margin-top: 50px;
     padding: 20px;
+    /* background-color: rgb(23, 0, 228); */
 }
 
+.intestazione{
+    color: white;
+    text-align: center;
+    font-size: 50px;
+}
+
+.contenitore-immagini{
+    width: 95%;
+    /* height: 1300px; */
+    margin: auto;
+    /* background-color: red; */
+
+}
+.row{
+    width: 90%;
+    /* background-color: green; */
+    margin: auto;
+    
+}
+
+.item{
+    background-image: url(img/pattern.png);
+    float: left;
+    width: 24.25%;
+    height: 331px;
+    background-size: contain;
+    border-radius: 5px;
+   
+}
+
+.clearfix::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.item img{
+    width: 100%;
+}
+
+.item  h4{
+    text-align: center;
+    /* background-color: salmon; */
+    height: 70px;
+    line-height:70px;
+}
+
+.item:hover{
+    background-image: none;
+    background-color: white;
+    
+}
+
+.item-content{
+    display: none;
+}
+
+.item:hover .item-content{
+    display: block;
+}
+
+.margin-10px{
+    margin-right: 1%;
+   
+}
+
+.margin-bot-15px{
+    margin-bottom: 15px;
+}
+
+.item-content.visibile{
+    display: block;
+    background-color: white;
+}
